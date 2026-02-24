@@ -1,39 +1,49 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# ad_uikit
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+Uma biblioteca abrangente de componentes de UI reutilizáveis e estilos para aplicativos Flutter. Este package foi desenvolvido para fornecer uma base sólida e consistente para a construção de interfaces modernas, seguindo padrões de design escaláveis.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+## Funcionalidades
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+- **Design Modular**: Componentes organizados de forma atômica para máxima reutilização.
+- **Sistema de Estilos**: Gerenciamento de estilos compartilhado e flexível que permite fácil personalização.
+- **Suporte a Comportamentos (Behaviors)**: Componentes que reagem de forma consistente a diferentes estados (como `regular`, `loading`, `error`, `disabled`, etc.).
+- **Tokens de Design**: Conjunto completo de tokens para cores, tamanhos, espaçamentos e tipografia (`ADColors`, `ADSizes`, `ADSpacing`, etc.).
 
-## Features
+## Começando
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Para começar a usar o `ad_uikit`, adicione-o como uma dependência no seu arquivo `pubspec.yaml`. Se estiver usando como um package local:
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  ad_uikit:
+    path: packages/ad_uikit
 ```
 
-## Additional information
+Em seguida, execute o comando para baixar as dependências:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```bash
+flutter pub get
+```
+
+## Uso
+
+Importe a biblioteca principal no seu código:
+
+```dart
+import 'package:ad_uikit/ad_uikit.dart';
+```
+
+### Exemplo: Utilizando o Shimmer
+
+O `ad_uikit` oferece componentes prontos para uso, como o `ZShimmer`:
+
+```dart
+// Exemplo de um shimmer retangular padrão
+ZShimmer.standard(
+  size: Size(200, 20),
+)
+```
+
+## Informações Adicionais
+
+Este pacote é mantido internamente e está em constante evolução. Para novas funcionalidades ou correção de bugs, verifique a estrutura de `lib/` e siga os padrões de contribuição definidos para o projeto.
