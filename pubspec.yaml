@@ -8,8 +8,10 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  equatable: ^2.0.8
   flutter:
     sdk: flutter
+  mini_screen_util: ^0.0.2
 
 dev_dependencies:
   flutter_test:
@@ -52,3 +54,4 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/to/font-from-package
+  uses-material-design: true

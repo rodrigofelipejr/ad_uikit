@@ -1,5 +1,6 @@
 abstract class ADSizes {
-  static const double x8 = 8;
+  static const double x04 = 4;
+  static const double x08 = 8;
   static const double x10 = 10;
   static const double x12 = 12;
   static const double x14 = 14;
